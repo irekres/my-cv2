@@ -1,0 +1,35 @@
+@import './variables';
+
+.cv-main {
+	max-width: 850px;
+	width: 100%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-areas: 'header header' 'personal details';
+	grid-template-columns: 200px 1fr;
+}
+
+.cv-header {
+	grid-area: header;
+	padding: $main-gap;
+	text-align: center;
+}
+
+.cv-personal {
+	padding: $main-gap;
+	background-color: #eee;
+	text-align: center;
+
+	.cv-photo {
+		width: 100%;
+		margin-top: $main-gap;
+		margin-bottom: $main-gap;
+		border-radius: 50%;
+	}
+}
+
+.cv-details {
+	padding: $main-gap;
+	text-align: center;
+	background-color: #fafafa;
+}
